@@ -33,7 +33,7 @@ const LandingPage: React.FC = () => {
 
   const handleFormSubmit = async () => {
     try {
-      const response = await axios.get(`https://www.fixhealth.com/_next/data/WTMTP_AiFg8-UiTA6qipW/home.json`);
+      const response = await axios.get(`https://www.fixhealth.com/_next/data/w2XjD6OUDZiPReN6EapB0/clinical-team.json`);
       setAvailableDoctors(response.data['pageProps'].data.physiotherapistCarouselData);
       setFlag(true);
     } catch (error) {
